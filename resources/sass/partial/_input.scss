@@ -1,0 +1,122 @@
+.input {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid $grey;
+    border-radius: 10px;
+    color: $black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.7;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+    transition: all 0.22s ease-in-out;
+    vertical-align: bottom;
+    &::placeholder {
+        color: $grey;
+        opacity: 1;
+        font-style: normal;
+    }
+    &:hover {
+        border-color: $grey;
+    }
+    &:focus {
+        background-color: transparent;
+        border-color: $grey;
+        &::placeholder {
+            opacity: 0;
+        }
+    }
+    // &:invalid,
+    &.invalid {
+        background-color: transparent;
+        border-color: $red;
+        &:hover {}
+        &:focus {
+            border-color: $red;
+        }
+    }
+    &[disabled],
+    &.disabled {
+        background-color: $grey;
+        color: $grey;
+        &:hover {
+            border-color: $grey;
+        }
+    }
+    &-wrapper {
+        box-sizing: border-box;
+        border-radius: 10px;
+        display: inline-block;
+        width: 100%;
+        margin: 0 0;
+        padding: 0 0;
+        vertical-align: bottom;
+        position: relative;
+        &--login {
+            .input {
+                padding-left: 70px;
+            }
+            &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                left: 15px;
+                top: 15px;
+                @include retina-sprite($icon-face-group);
+            }
+            &::after {
+                content: '';
+                border-left: 1px solid $grey;
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                min-height: 100%;
+                left: 54px;
+                top: 0;
+                bottom: 0;
+            }
+        }
+        &--password {
+            .input {
+                padding-left: 70px;
+            }
+            &::before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                left: 15px;
+                top: 15px;
+                @include retina-sprite($icon-lock-group);
+            }
+            &::after {
+                content: '';
+                border-left: 1px solid $grey;
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                min-height: 100%;
+                left: 54px;
+                top: 0;
+                bottom: 0;
+            }
+        }
+        &--date {
+            .input {
+                padding-right: 70px;
+            }
+            &::after {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                position: absolute;
+                right: 17px;
+                top: 15px;
+                @include retina-sprite($icon-calendar-group);
+            }
+        }
+    }
+}
+

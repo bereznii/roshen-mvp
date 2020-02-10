@@ -1,0 +1,47 @@
+@import 'partial/_normalize';
+@import 'partial/_variables';
+@import 'partial/_mixins';
+@import 'partial/_fonts';
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100%;
+    font-family: 'Myriad Pro', sans-serif;
+    font-size: 14px;
+    color: #050310;
+    background-color: #F7F9FD;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+    -webkit-tap-highlight-color: transparent;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// @import '../../node_modules/choices.js/src/styles/choices';
+// @import '../../node_modules/flatpickr/dist/flatpickr';
+
+@import "partial/_sprite";
+@include retina-sprites($retina-groups);
+
+@import 'partial/_button';
+@import 'partial/_label';
+@import 'partial/_input';
+@import 'partial/_checkbox';
+@import 'partial/_select';
+@import 'partial/_flatpickr';
+
+@import 'partial/_rating';
+@import 'partial/_chart';
+
+@import 'partial/_header';
+@import 'partial/_estimate';
+@import 'partial/_info';
+@import 'partial/_contact';
+@import 'partial/_login';
+@import 'partial/_stats-controls';
+@import 'partial/_stats-data';

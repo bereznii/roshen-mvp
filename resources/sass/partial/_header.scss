@@ -1,0 +1,38 @@
+.header {
+    box-sizing: border-box;
+    &__content {
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 auto;
+        padding: 45px 50px;
+        max-width: 730px;
+    }
+    &__logo {
+        box-sizing: border-box;
+        display: inline-block;
+        width: 120px;
+        vertical-align: middle;
+    }
+    &__link {
+        background-color: transparent;
+        border-color: transparent;
+        border: none;
+        box-sizing: border-box;
+        color: $black;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        outline: none;
+        margin: 0 0;
+        padding: 0 0;
+        vertical-align: middle;
+        transition: all 0.22s ease-in-out;
+        &:hover,&:focus,&:active {
+            background-color: transparent;
+            border-color: transparent;
+            color: $black;
+            outline: none;
+            text-decoration: none;
+        }
+    }
+}

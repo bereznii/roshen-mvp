@@ -1,0 +1,56 @@
+.rating {
+    box-sizing: border-box;
+    font-size: 0;
+    display: inline-block;
+    vertical-align: top;
+    &__item {
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 0;
+        outline: none;
+        padding: 0 0;
+        vertical-align: middle;
+        white-space: nowrap;
+        &:hover,&:focus,&:active {
+            background-color: transparent;
+            text-decoration: none;
+            outline: none;
+        }
+        &[disabled],
+        &.disabled {
+            cursor: default;
+        }
+        &:not(:last-of-type) {
+            margin-right: 16px;
+        }
+        svg > path:nth-child(1) {
+            fill: $grey;
+        }
+        svg > path:nth-child(2) {
+            fill: $red;
+            display: none;
+        }
+        &.active {
+            svg > path:nth-child(2) {
+                display: inline-block;
+            } 
+        }
+    }
+    &__radio {
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        visibility: hidden;
+        &:checked + svg > path:nth-child(2) {
+            display: inline-block;
+        } 
+    }
+}

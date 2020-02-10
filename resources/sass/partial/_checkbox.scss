@@ -1,0 +1,100 @@
+.checkbox {
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 0;
+    color: $black;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    text-align: left;
+    padding: 0 0;
+    transition: all 0.22s ease-in-out;
+    vertical-align: top;
+    white-space: nowrap;
+    position: relative;
+    &:hover {
+        border-color: transparent;
+    }
+    &:focus-within {
+    }
+    // &:invalid,
+    &.invalid {
+        background-color: transparent;
+        border-color: transparent;
+        &:hover {}
+        &:focus-within {
+            border-color: transparent;
+        }
+    }
+    &[disabled],
+    &.disabled {
+        background-color: $grey;
+        border-color: $grey;
+        cursor: default;
+        &:hover {
+            background-color: $grey;
+            border-color: $grey;
+        }
+    }
+    &--line {
+        display: block;
+        width: 100%;
+        margin-bottom: 18px;
+        padding: 0 1px;
+        .checkbox__mark {
+            margin-top: 4px;
+        }
+    }
+    &__input {
+        font-size: 0;
+        line-height: 0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        outline: none;
+        visibility: hidden;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 0;
+        &:checked ~ .checkbox__mark {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+    &__mark {
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: $red;
+        border: 1px solid $red;
+        border-radius: 4px;
+        width: 14px;
+        height: 14px;
+        position: relative;
+        &::before {
+            content: '';
+            display: inline-block;
+            opacity: 0;
+            vertical-align: middle;
+            position: absolute;
+            left: 1px;
+            top: 1px;
+            @include retina-sprite($icon-check-group);
+        }
+    }
+    &__content {
+        display: inline-block;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.7;
+        text-transform: none;
+        text-align: left;
+        margin-left: 10px;
+        vertical-align: top;
+        white-space: normal;
+    }
+}
+

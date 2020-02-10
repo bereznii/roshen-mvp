@@ -1,0 +1,13 @@
+.stats-controls {
+    box-sizing: border-box;
+    &__form {
+        box-sizing: border-box;
+        text-align: center;
+        margin: 0 auto 0 auto;
+        padding: 0 0;
+        max-width: 280px;
+    }
+    &__fields {
+        margin-bottom: 0px;
+    }
+}

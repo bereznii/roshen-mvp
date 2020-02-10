@@ -1,0 +1,394 @@
+.label>.select {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: 1px solid $grey;
+    border-radius: 10px;
+    color: $black;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.7;
+    padding: 15px 20px;
+    width: 100%;
+    outline: none;
+    transition: all 0.22s ease-in-out;
+    vertical-align: bottom;
+    appearance: none;
+    &::placeholder {
+        color: $grey;
+        opacity: 1;
+        font-style: normal;
+    }
+    &:hover {
+        border-color: $grey;
+    }
+    &:focus {
+        background-color: transparent;
+        border-color: $grey;
+        &::placeholder {
+            opacity: 0;
+        }
+    }
+    &:required:invalid {
+        color: $grey;
+        option {
+            color: $black;
+        }
+    }
+    // &:invalid,
+    &.invalid {
+        background-color: transparent;
+        border-color: $red;
+        &:hover {}
+        &:focus {
+            border-color: $red;
+        }
+    }
+    &[disabled],
+    &.disabled {
+        background-color: $grey;
+        color: $grey;
+        &:hover {
+            border-color: $grey;
+        }
+    }
+    option[hidden] {
+        display: none;
+    }
+}
+
+.select-choices {
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 0 0;
+    width: 100%;
+    outline: none;
+    transition: all 0.22s ease-in-out;
+    vertical-align: bottom;
+    position: relative;
+    &:focus {
+        outline: none;
+    }
+    &.is-disabled {
+        .choices__inner,
+        .choices__input {
+            background-color: transparent;
+            cursor: not-allowed;
+            user-select: none;
+        }
+        .choices__item {
+            cursor: not-allowed;
+        }
+    }
+    [hidden] {
+        display: none !important;
+    }
+    *,
+    *:before,
+    *:after {
+        box-sizing: border-box;
+    }
+
+    .choices__inner {
+        display: inline-block;
+        box-sizing: border-box;
+        background-color: transparent;
+        border: 1px solid $grey;
+        border-radius: 10px;
+        color: $black;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.7;
+        padding: 15px 20px;
+        min-height: 55px;
+        width: 100%;
+        outline: none;
+        overflow: hidden;
+        vertical-align: top;
+        transition: all 0.22s ease-in-out;
+        .is-open & {
+            border-radius: 10px 10px 0 0;
+        }
+        .is-flipped.is-open & {
+            border-radius: 0 0 10px 10px;
+        }
+        [data-value=""] {
+          color: $grey;
+        }
+    }
+    &[data-type*='select-one'] {
+        cursor: pointer;
+        .choices__inner {
+          padding: 15px 40px 15px 20px;
+        }
+        .choices__input {
+            display: block;
+            box-sizing: border-box;
+            background-color: transparent;
+            border-bottom: 1px solid $grey;
+            border-radius: 0;
+            color: $black;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.7;
+            margin: 0 0;
+            padding: 15px 20px;
+            width: 100%;
+            outline: none;
+        }
+        .choices__button {
+            color: $black;
+            font-size: 14px;
+            font-weight: bold;
+            padding: 0;
+            background-size: 8px;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin-top: -10px;
+            margin-right: 25px;
+            height: 20px;
+            width: 20px;
+            border-radius: 10em;
+            opacity: 0.5;
+            &::before {
+                content: '00\D7';
+            }
+            &:hover,
+            &:focus {
+              opacity: 1;
+            }
+            &:focus {
+              box-shadow: $shadow;
+            }
+        }
+        &:after {
+            content: '';
+            height: 8px;
+            width: 8px;
+            background-color: transparent;
+            border-style: solid;
+            border-color: transparent $grey $grey transparent;
+            border-width: 2px;
+            position: absolute;
+            right: 23px;
+            top: 50%;
+            margin-top: -10px;
+            pointer-events: none;
+            transform: rotate(45deg);
+        }
+        &.is-open:after {
+            border-color: transparent $grey $grey transparent;
+            transform: rotate(45deg);
+            margin-top: -10px;
+        }
+    }
+    .choices__list {
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+    .choices__list--single {
+        display: inline-block;
+        padding: 0 0;
+        width: 100%;
+        .choices__item {
+            width: 100%;
+        }
+    }
+    .choices__list--multiple {
+        display: inline;
+        .choices__item {
+            display: inline-block;
+            vertical-align: middle;
+            border-radius: 10px;
+            padding: 5px 20px;
+            font-size: 14px;
+            font-weight: 400;
+            margin-right: 3.75px;
+            margin-bottom: 3.75px;
+            background-color: $red;
+            border: 1px solid $red;
+            color: $white;
+            word-break: break-all;
+            &[data-deletable] {
+                padding-right: 25px;
+            }
+            [dir='rtl'] & {
+                margin-right: 0;
+                margin-left: 3.75px;
+            }
+            &.is-highlighted {
+                background-color: $red;
+                border: 1px solid $red;
+            }
+            .is-disabled & {
+              background-color: $grey;
+              border: 1px solid $grey;
+            }
+        }
+    }
+    .choices__list--dropdown {
+        display: none;
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        background-color: $light;
+        border: 1px solid $grey;
+        border-radius: 10px;
+        top: 100%;
+        margin-top: 10px;
+        padding-right: 12px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        overflow: hidden;
+        word-break: break-all;
+        &.is-active {
+            display: block;
+        }
+        .is-open & {
+            border-color: $grey;
+        }
+        .is-flipped & {
+            top: auto;
+            bottom: 100%;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+        .choices__input {
+            width: calc(100% + 12px);
+            max-width: calc(100% + 12px);
+        }
+        .choices__list {
+            position: relative;
+            max-height: 162px;
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+            will-change: scroll-position;
+            scrollbar-width: thin;
+            scrollbar-color: $grey transparent;
+            &::-webkit-scrollbar {
+                width: 11px;
+                height: 11px;
+            }
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+            &::-webkit-scrollbar-thumb {
+                width: 11px;
+                height: 11px;
+                background-color: $grey;
+                border-radius: 4px;
+                outline: none;
+            }
+        }
+        .choices__item {
+            position: relative;
+            padding: 5px 20px;
+            color: $black;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.7;
+            [dir='rtl'] & {
+                text-align: right;
+            }
+            &[data-value=""] {
+                visibility: hidden;
+                display: none;
+            }
+            &:first-of-type {
+                margin-top: -5px;
+            }
+            &:last-of-type {
+                margin-bottom: -5px;
+            }
+        }
+        .choices__item--selectable {
+            @media (min-width: 640px) {
+                padding-right: 100px;
+                &:after {
+                    content: attr(data-select-text);
+                    color: $grey;
+                    font-size: 14px;
+                    opacity: 0;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                [dir='rtl'] & {
+                    text-align: right;
+                    padding-left: 100px;
+                    padding-right: 10px;
+                    &:after {
+                        right: auto;
+                        left: 10px;
+                    }
+                }
+            }
+            &.is-highlighted {
+                background-color: inherit;
+                color: $red;
+                &:after {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+    .choices__item {
+        cursor: default;
+    }
+    .choices__item--selectable {
+        cursor: pointer;
+    }
+    .choices__item--disabled {
+        cursor: not-allowed;
+        user-select: none;
+        opacity: 1;
+        color: $grey;
+    }
+    .choices__heading {
+        font-weight: 600;
+        font-size: 14px;
+        padding: 10px;
+        border-bottom: 1px solid $grey;
+        color: $black;
+    }
+    .choices__button {
+        text-indent: -9999px;
+        -webkit-appearance: none;
+        appearance: none;
+        border: 0;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+    }
+    .choices__input {
+        display: inline-block;
+        vertical-align: baseline;
+        background-color: transparent;
+        font-size: 14px;
+        margin-bottom: 5px;
+        border: 0;
+        border-radius: 0;
+        max-width: 100%;
+        padding: 15px 20px;
+        &:focus {
+            outline: 0;
+        }
+        [dir='rtl'] & {
+          padding-right: 2px;
+          padding-left: 0;
+        }
+    }
+    .choices__placeholder {
+        opacity: 1;
+        color: $grey;
+    }
+}

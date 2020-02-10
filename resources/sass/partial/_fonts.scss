@@ -1,0 +1,78 @@
+/* Myriad Pro */
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('/fonts/MyriadPro/MyriadPro-Light.eot');
+    src: local('Myriad Pro Light'), local('MyriadPro-Light'),
+        url('/fonts/MyriadPro/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MyriadPro/MyriadPro-Light.woff') format('woff'),
+        url('/fonts/MyriadPro/MyriadPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('/fonts/MyriadPro/MyriadPro-Regular.eot');
+    src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
+        url('/fonts/MyriadPro/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MyriadPro/MyriadPro-Regular.woff') format('woff'),
+        url('/fonts/MyriadPro/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('/fonts/MyriadPro/MyriadPro-Semibold.eot');
+    src: local('Myriad Pro Semibold'), local('MyriadPro-Semibold'),
+        url('/fonts/MyriadPro/MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MyriadPro/MyriadPro-Semibold.woff') format('woff'),
+        url('/fonts/MyriadPro/MyriadPro-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('/fonts/MyriadPro/MyriadPro-Bold.eot');
+    src: local('Myriad Pro Bold'), local('MyriadPro-Bold'),
+        url('/fonts/MyriadPro/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MyriadPro/MyriadPro-Bold.woff') format('woff'),
+        url('/fonts/MyriadPro/MyriadPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('/fonts/MyriadPro/MyriadPro-Black.eot');
+    src: local('Myriad Pro Black'), local('MyriadPro-Black'),
+        url('/fonts/MyriadPro/MyriadPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/MyriadPro/MyriadPro-Black.woff') format('woff'),
+        url('/fonts/MyriadPro/MyriadPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+/* Helvetica Neue */
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/fonts/HelveticaNeue/HelveticaNeue-Regular.eot');
+    src: local('HelveticaNeue-Regular'),
+        url('/fonts/HelveticaNeue/HelveticaNeue-Regular.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/HelveticaNeue/HelveticaNeue-Regular.woff') format('woff'),
+        url('/fonts/HelveticaNeue/HelveticaNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/fonts/HelveticaNeue/HelveticaNeue-Bold.eot');
+    src: local('HelveticaNeue-Bold'),
+        url('/fonts/HelveticaNeue/HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/HelveticaNeue/HelveticaNeue-Bold.woff') format('woff'),
+        url('/fonts/HelveticaNeue/HelveticaNeue-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}

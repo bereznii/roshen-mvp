@@ -1,0 +1,29 @@
+.label {
+    box-sizing: border-box;
+    display: inline-block;
+    color: $black;
+    font-size: 14px;
+    // font-size: 0px;
+    font-weight: 600;
+    line-height: 1.7;
+    text-transform: none;
+    text-align: left;
+    transition: all 0.22s ease-in-out;
+    margin: 0 0 18px 0;
+    width: 100%;
+    &:focus-within {
+        // color: $blue;
+    }
+    &.invalid {
+        color: $red;
+        &:focus-within {
+            color: $red;
+        }
+    }
+    &__text {
+        display: block;
+        margin-bottom: 3px;
+        padding: 0 2px;
+    }
+}
+

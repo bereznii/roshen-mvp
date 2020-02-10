@@ -1,0 +1,298 @@
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
+$icon-calendar-name: 'icon-calendar';
+$icon-calendar-x: 34px;
+$icon-calendar-y: 34px;
+$icon-calendar-offset-x: -34px;
+$icon-calendar-offset-y: -34px;
+$icon-calendar-width: 24px;
+$icon-calendar-height: 24px;
+$icon-calendar-total-width: 92px;
+$icon-calendar-total-height: 66px;
+$icon-calendar-image: '/img/sprite.png';
+$icon-calendar: (34px, 34px, -34px, -34px, 24px, 24px, 92px, 66px, '/img/sprite.png', 'icon-calendar', );
+$icon-check-name: 'icon-check';
+$icon-check-x: 68px;
+$icon-check-y: 52px;
+$icon-check-offset-x: -68px;
+$icon-check-offset-y: -52px;
+$icon-check-width: 10px;
+$icon-check-height: 10px;
+$icon-check-total-width: 92px;
+$icon-check-total-height: 66px;
+$icon-check-image: '/img/sprite.png';
+$icon-check: (68px, 52px, -68px, -52px, 10px, 10px, 92px, 66px, '/img/sprite.png', 'icon-check', );
+$icon-face-name: 'icon-face';
+$icon-face-x: 68px;
+$icon-face-y: 0px;
+$icon-face-offset-x: -68px;
+$icon-face-offset-y: 0px;
+$icon-face-width: 24px;
+$icon-face-height: 24px;
+$icon-face-total-width: 92px;
+$icon-face-total-height: 66px;
+$icon-face-image: '/img/sprite.png';
+$icon-face: (68px, 0px, -68px, 0px, 24px, 24px, 92px, 66px, '/img/sprite.png', 'icon-face', );
+$icon-lock-name: 'icon-lock';
+$icon-lock-x: 68px;
+$icon-lock-y: 26px;
+$icon-lock-offset-x: -68px;
+$icon-lock-offset-y: -26px;
+$icon-lock-width: 24px;
+$icon-lock-height: 24px;
+$icon-lock-total-width: 92px;
+$icon-lock-total-height: 66px;
+$icon-lock-image: '/img/sprite.png';
+$icon-lock: (68px, 26px, -68px, -26px, 24px, 24px, 92px, 66px, '/img/sprite.png', 'icon-lock', );
+$icon-telegram-name: 'icon-telegram';
+$icon-telegram-x: 0px;
+$icon-telegram-y: 0px;
+$icon-telegram-offset-x: 0px;
+$icon-telegram-offset-y: 0px;
+$icon-telegram-width: 32px;
+$icon-telegram-height: 32px;
+$icon-telegram-total-width: 92px;
+$icon-telegram-total-height: 66px;
+$icon-telegram-image: '/img/sprite.png';
+$icon-telegram: (0px, 0px, 0px, 0px, 32px, 32px, 92px, 66px, '/img/sprite.png', 'icon-telegram', );
+$icon-viber-name: 'icon-viber';
+$icon-viber-x: 34px;
+$icon-viber-y: 0px;
+$icon-viber-offset-x: -34px;
+$icon-viber-offset-y: 0px;
+$icon-viber-width: 32px;
+$icon-viber-height: 32px;
+$icon-viber-total-width: 92px;
+$icon-viber-total-height: 66px;
+$icon-viber-image: '/img/sprite.png';
+$icon-viber: (34px, 0px, -34px, 0px, 32px, 32px, 92px, 66px, '/img/sprite.png', 'icon-viber', );
+$icon-website-name: 'icon-website';
+$icon-website-x: 0px;
+$icon-website-y: 34px;
+$icon-website-offset-x: 0px;
+$icon-website-offset-y: -34px;
+$icon-website-width: 32px;
+$icon-website-height: 32px;
+$icon-website-total-width: 92px;
+$icon-website-total-height: 66px;
+$icon-website-image: '/img/sprite.png';
+$icon-website: (0px, 34px, 0px, -34px, 32px, 32px, 92px, 66px, '/img/sprite.png', 'icon-website', );
+$icon-calendar-2x-name: 'icon-calendar@2x';
+$icon-calendar-2x-x: 68px;
+$icon-calendar-2x-y: 68px;
+$icon-calendar-2x-offset-x: -68px;
+$icon-calendar-2x-offset-y: -68px;
+$icon-calendar-2x-width: 48px;
+$icon-calendar-2x-height: 48px;
+$icon-calendar-2x-total-width: 184px;
+$icon-calendar-2x-total-height: 132px;
+$icon-calendar-2x-image: '/img/sprite@2x.png';
+$icon-calendar-2x: (68px, 68px, -68px, -68px, 48px, 48px, 184px, 132px, '/img/sprite@2x.png', 'icon-calendar@2x', );
+$icon-check-2x-name: 'icon-check@2x';
+$icon-check-2x-x: 136px;
+$icon-check-2x-y: 104px;
+$icon-check-2x-offset-x: -136px;
+$icon-check-2x-offset-y: -104px;
+$icon-check-2x-width: 20px;
+$icon-check-2x-height: 20px;
+$icon-check-2x-total-width: 184px;
+$icon-check-2x-total-height: 132px;
+$icon-check-2x-image: '/img/sprite@2x.png';
+$icon-check-2x: (136px, 104px, -136px, -104px, 20px, 20px, 184px, 132px, '/img/sprite@2x.png', 'icon-check@2x', );
+$icon-face-2x-name: 'icon-face@2x';
+$icon-face-2x-x: 136px;
+$icon-face-2x-y: 0px;
+$icon-face-2x-offset-x: -136px;
+$icon-face-2x-offset-y: 0px;
+$icon-face-2x-width: 48px;
+$icon-face-2x-height: 48px;
+$icon-face-2x-total-width: 184px;
+$icon-face-2x-total-height: 132px;
+$icon-face-2x-image: '/img/sprite@2x.png';
+$icon-face-2x: (136px, 0px, -136px, 0px, 48px, 48px, 184px, 132px, '/img/sprite@2x.png', 'icon-face@2x', );
+$icon-lock-2x-name: 'icon-lock@2x';
+$icon-lock-2x-x: 136px;
+$icon-lock-2x-y: 52px;
+$icon-lock-2x-offset-x: -136px;
+$icon-lock-2x-offset-y: -52px;
+$icon-lock-2x-width: 48px;
+$icon-lock-2x-height: 48px;
+$icon-lock-2x-total-width: 184px;
+$icon-lock-2x-total-height: 132px;
+$icon-lock-2x-image: '/img/sprite@2x.png';
+$icon-lock-2x: (136px, 52px, -136px, -52px, 48px, 48px, 184px, 132px, '/img/sprite@2x.png', 'icon-lock@2x', );
+$icon-telegram-2x-name: 'icon-telegram@2x';
+$icon-telegram-2x-x: 0px;
+$icon-telegram-2x-y: 0px;
+$icon-telegram-2x-offset-x: 0px;
+$icon-telegram-2x-offset-y: 0px;
+$icon-telegram-2x-width: 64px;
+$icon-telegram-2x-height: 64px;
+$icon-telegram-2x-total-width: 184px;
+$icon-telegram-2x-total-height: 132px;
+$icon-telegram-2x-image: '/img/sprite@2x.png';
+$icon-telegram-2x: (0px, 0px, 0px, 0px, 64px, 64px, 184px, 132px, '/img/sprite@2x.png', 'icon-telegram@2x', );
+$icon-viber-2x-name: 'icon-viber@2x';
+$icon-viber-2x-x: 68px;
+$icon-viber-2x-y: 0px;
+$icon-viber-2x-offset-x: -68px;
+$icon-viber-2x-offset-y: 0px;
+$icon-viber-2x-width: 64px;
+$icon-viber-2x-height: 64px;
+$icon-viber-2x-total-width: 184px;
+$icon-viber-2x-total-height: 132px;
+$icon-viber-2x-image: '/img/sprite@2x.png';
+$icon-viber-2x: (68px, 0px, -68px, 0px, 64px, 64px, 184px, 132px, '/img/sprite@2x.png', 'icon-viber@2x', );
+$icon-website-2x-name: 'icon-website@2x';
+$icon-website-2x-x: 0px;
+$icon-website-2x-y: 68px;
+$icon-website-2x-offset-x: 0px;
+$icon-website-2x-offset-y: -68px;
+$icon-website-2x-width: 64px;
+$icon-website-2x-height: 64px;
+$icon-website-2x-total-width: 184px;
+$icon-website-2x-total-height: 132px;
+$icon-website-2x-image: '/img/sprite@2x.png';
+$icon-website-2x: (0px, 68px, 0px, -68px, 64px, 64px, 184px, 132px, '/img/sprite@2x.png', 'icon-website@2x', );
+$spritesheet-width: 92px;
+$spritesheet-height: 66px;
+$spritesheet-image: '/img/sprite.png';
+$spritesheet-sprites: ($icon-calendar, $icon-check, $icon-face, $icon-lock, $icon-telegram, $icon-viber, $icon-website, );
+$spritesheet: (92px, 66px, '/img/sprite.png', $spritesheet-sprites, );
+$retina-spritesheet-width: 184px;
+$retina-spritesheet-height: 132px;
+$retina-spritesheet-image: '/img/sprite@2x.png';
+$retina-spritesheet-sprites: ($icon-calendar-2x, $icon-check-2x, $icon-face-2x, $icon-lock-2x, $icon-telegram-2x, $icon-viber-2x, $icon-website-2x, );
+$retina-spritesheet: (184px, 132px, '/img/sprite@2x.png', $retina-spritesheet-sprites, );
+
+// These "retina group" variables are mappings for the naming and pairing of normal and retina sprites.
+//
+// The list formatted variables are intended for mixins like `retina-sprite` and `retina-sprites`.
+$icon-calendar-group-name: 'icon-calendar';
+$icon-calendar-group: ('icon-calendar', $icon-calendar, $icon-calendar-2x, );
+$icon-check-group-name: 'icon-check';
+$icon-check-group: ('icon-check', $icon-check, $icon-check-2x, );
+$icon-face-group-name: 'icon-face';
+$icon-face-group: ('icon-face', $icon-face, $icon-face-2x, );
+$icon-lock-group-name: 'icon-lock';
+$icon-lock-group: ('icon-lock', $icon-lock, $icon-lock-2x, );
+$icon-telegram-group-name: 'icon-telegram';
+$icon-telegram-group: ('icon-telegram', $icon-telegram, $icon-telegram-2x, );
+$icon-viber-group-name: 'icon-viber';
+$icon-viber-group: ('icon-viber', $icon-viber, $icon-viber-2x, );
+$icon-website-group-name: 'icon-website';
+$icon-website-group: ('icon-website', $icon-website, $icon-website-2x, );
+$retina-groups: ($icon-calendar-group, $icon-check-group, $icon-face-group, $icon-lock-group, $icon-telegram-group, $icon-viber-group, $icon-website-group, );
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+// The `retina-sprite` mixin sets up rules and a media query for a sprite/retina sprite.
+//   It should be used with a "retina group" variable.
+//
+// The media query is from CSS Tricks: https://css-tricks.com/snippets/css/retina-display-media-query/
+//
+// $icon-home-group: ('icon-home', $icon-home, $icon-home-2x, );
+//
+// .icon-home {
+//   @include retina-sprite($icon-home-group);
+// }
+@mixin sprite-background-size($sprite) {
+  $sprite-total-width: nth($sprite, 7);
+  $sprite-total-height: nth($sprite, 8);
+  background-size: $sprite-total-width $sprite-total-height;
+}
+
+@mixin retina-sprite($retina-group) {
+  $normal-sprite: nth($retina-group, 2);
+  $retina-sprite: nth($retina-group, 3);
+  @include sprite($normal-sprite);
+
+  @media (-webkit-min-device-pixel-ratio: 2),
+         (min-resolution: 192dpi) {
+    @include sprite-image($retina-sprite);
+    @include sprite-background-size($normal-sprite);
+  }
+}
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}
+
+// The `retina-sprites` mixin generates a CSS rule and media query for retina groups
+//   This yields the same output as CSS retina template but can be overridden in SCSS
+//
+// @include retina-sprites($retina-groups);
+@mixin retina-sprites($retina-groups) {
+  @each $retina-group in $retina-groups {
+    $sprite-name: nth($retina-group, 1);
+    .#{$sprite-name} {
+      @include retina-sprite($retina-group);
+    }
+  }
+}
